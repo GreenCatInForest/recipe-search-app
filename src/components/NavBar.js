@@ -13,7 +13,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import Badge from "@mui/material/Badge";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import FitnessCenterTwoToneIcon from "@mui/icons-material/FitnessCenterTwoTone";
 // import { useApp } from "../hooks/useApp";
 
 export const NavBar = () => {
@@ -50,10 +50,10 @@ export const NavBar = () => {
                 <ListItemButton
                   onClick={() => {
                     handleCloseDrawer();
-                    navigate("/wish-list");
+                    navigate("/explore");
                   }}
                 >
-                  <ListItemText primary="Wish List" />
+                  <ListItemText primary="Explore" />
                 </ListItemButton>
               </ListItem>
             </List>
@@ -70,12 +70,12 @@ export const NavBar = () => {
             </IconButton>
             <IconButton
               onClick={() => {
-                navigate("/checkout");
+                navigate("/my-plans");
               }}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               <Badge badgeContent={4} color="error">
-                <ShoppingCartIcon />
+                <FitnessCenterTwoToneIcon />
               </Badge>
             </IconButton>
           </Box>
@@ -103,20 +103,20 @@ export const NavBar = () => {
               </Button>
               <Button
                 onClick={() => {
-                  navigate("/wish-list");
+                  navigate("/my-plans");
                 }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                Wish List
+                Explore
               </Button>
             </Box>
             <IconButton
               onClick={() => {
-                navigate("/checkout");
+                navigate("/my-plans");
               }}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              <ShoppingCartIcon />
+              <FitnessCenterTwoToneIcon />
             </IconButton>
           </Box>
         </Toolbar>
