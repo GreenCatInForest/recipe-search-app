@@ -1,8 +1,7 @@
-export const Banner = ({ title, subTitle }) => {
+export const Banner = () => {
   return (
     <div>
-      <h1>{title}</h1>
-      <h2>{subTitle}</h2>
+      Banner
     </div>
   );
 };
