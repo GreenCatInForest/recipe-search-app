@@ -61,7 +61,10 @@ export const NavBar = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "none" },
+              display: {
+                xs: "flex",
+                md: "none",
+              },
               justifyContent: "space-between",
             }}
           >
@@ -80,10 +83,11 @@ export const NavBar = () => {
             </IconButton>
           </Box>
           <Box
+            // style of the main nav box
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "space-between",
+              justifyContent: "space-evenly",
               alignItems: "center",
             }}
           >
@@ -97,7 +101,7 @@ export const NavBar = () => {
                 onClick={() => {
                   navigate("/");
                 }}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, mx: 2, color: "white", display: "block" }}
               >
                 Home
               </Button>
@@ -105,19 +109,19 @@ export const NavBar = () => {
                 onClick={() => {
                   navigate("/my-plans");
                 }}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, mx: 2, color: "white", display: "block" }}
               >
                 Explore
               </Button>
+              <IconButton
+                onClick={() => {
+                  navigate("/my-plans");
+                }}
+                sx={{ my: 2, mx: 2, color: "white", display: "block" }}
+              >
+                <FitnessCenterTwoToneIcon />
+              </IconButton>
             </Box>
-            <IconButton
-              onClick={() => {
-                navigate("/my-plans");
-              }}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <FitnessCenterTwoToneIcon />
-            </IconButton>
           </Box>
         </Toolbar>
       </Container>
