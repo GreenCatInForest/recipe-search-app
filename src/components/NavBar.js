@@ -107,7 +107,7 @@ export const NavBar = () => {
               </Button>
               <Button
                 onClick={() => {
-                  navigate("/my-plans");
+                  navigate("/explore");
                 }}
                 sx={{ my: 2, mx: 2, color: "white", display: "block" }}
               >
