@@ -13,7 +13,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import Badge from "@mui/material/Badge";
-import FitnessCenterTwoToneIcon from "@mui/icons-material/FitnessCenterTwoTone";
+import FoodBankIcon from "@mui/icons-material/FoodBank";
 // import { useApp } from "../hooks/useApp";
 
 export const NavBar = () => {
@@ -78,7 +78,7 @@ export const NavBar = () => {
               sx={{ my: 2, color: "white", display: "block" }}
             >
               <Badge badgeContent={4} color="error">
-                <FitnessCenterTwoToneIcon />
+                <FoodBankIcon />
               </Badge>
             </IconButton>
           </Box>
@@ -117,9 +117,9 @@ export const NavBar = () => {
                 onClick={() => {
                   navigate("/my-plans");
                 }}
-                sx={{ my: 2, mx: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block" }}
               >
-                <FitnessCenterTwoToneIcon />
+                <FoodBankIcon />
               </IconButton>
             </Box>
           </Box>
