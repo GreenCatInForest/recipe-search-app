@@ -1,11 +1,11 @@
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import * as React from 'react';
 
 export const Banner = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   
   return (
     <Paper elevation={3}>
