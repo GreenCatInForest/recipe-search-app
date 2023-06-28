@@ -117,7 +117,7 @@ export const NavBar = () => {
                 onClick={() => {
                   navigate("/my-plans");
                 }}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, mx: 2, color: "white", display: "block" }}
               >
                 <FoodBankIcon />
               </IconButton>
