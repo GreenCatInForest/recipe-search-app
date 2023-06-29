@@ -55,12 +55,13 @@ export const SearchForm = ({ handleSubmit }) => {
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           //value={age}
-          label="Age"
+          label="Select diet"
           //onChange={handleChange}
         >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={"Gluten Free"}>Gluten Free</MenuItem>
+          <MenuItem value={"Vegetarian"}>Vegetarian</MenuItem>
+          <MenuItem value={"Ketogenic"}>Ketogenic</MenuItem>
+          <MenuItem value={"Vegan"}>Vegan</MenuItem>
         </Select>
       </FormControl>
 
