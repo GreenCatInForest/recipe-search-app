@@ -14,11 +14,9 @@ import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import Badge from "@mui/material/Badge";
 import FoodBankIcon from "@mui/icons-material/FoodBank";
-// import { useApp } from "../hooks/useApp";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  //   const { state } = useApp();
 
   const navigate = useNavigate();
 

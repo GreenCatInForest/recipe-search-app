@@ -1,15 +1,14 @@
-import { Footer } from "../components/Footer"
-import { SearchForm } from "../components/SearchForm"
-import { RecipesContainer } from "../components/RecipesContainer"
+import Stack from "@mui/material/Stack";
+
+import { Footer } from "../components/Footer";
+import { SearchForm } from "../components/SearchForm";
+import { RecipesContainer } from "../components/RecipesContainer";
 
 export const Explore = () => {
-    return (
-      <div>
-        <SearchForm />
-        <RecipesContainer />
-        <Footer />
-      </div>
-      
-    );
-  };
-  
+  return (
+    <Stack spacing={3}>
+      <SearchForm />
+      <RecipesContainer />
+    </Stack>
+  );
+};

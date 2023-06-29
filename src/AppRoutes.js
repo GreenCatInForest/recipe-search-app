@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Explore } from "./pages/Explore";
 import { MyPlans } from "./pages/MyPlans";
+
 export const AppRoutes = () => {
   return (
     <Routes>
