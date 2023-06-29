@@ -3,7 +3,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import { Stack } from "@mui/material";
+import { Grid, Stack } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import TextField from "@mui/material/TextField";
@@ -64,20 +64,21 @@ export const SearchForm = ({ handleSubmit }) => {
         </Select>
       </FormControl>
 
-      <FormGroup rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
-        <FormControlLabel control={<Checkbox />} label="Label" />
+      <FormGroup>
+        <Grid container justifyContent="center" alignItems="center" columns={3}>
+          <FormControlLabel control={<Checkbox />} label="Dairy" />
+          <FormControlLabel control={<Checkbox />} label="Egg" />
+          <FormControlLabel control={<Checkbox />} label="Gluten" />
+          <FormControlLabel control={<Checkbox />} label="Grain" />
+          <FormControlLabel control={<Checkbox />} label="Peanut" />
+          <FormControlLabel control={<Checkbox />} label="Seafood" />
+          <FormControlLabel control={<Checkbox />} label="Sesame" />
+          <FormControlLabel control={<Checkbox />} label="Shellfish" />
+          <FormControlLabel control={<Checkbox />} label="Soy" />
+          <FormControlLabel control={<Checkbox />} label="Sulfite" />
+          <FormControlLabel control={<Checkbox />} label="Tree Nut" />
+          <FormControlLabel control={<Checkbox />} label="Wheat" />
+        </Grid>
       </FormGroup>
     </Stack>
   );
