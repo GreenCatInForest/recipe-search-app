@@ -13,6 +13,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import Button from "@mui/material/Button";
 
 export const SearchForm = ({ handleSubmit }) => {
   const onSubmit = ({ searchTerm }) => {
@@ -58,10 +59,11 @@ export const SearchForm = ({ handleSubmit }) => {
           label="Select diet"
           //onChange={handleChange}
         >
-          <MenuItem value={"Gluten Free"}>Gluten Free</MenuItem>
-          <MenuItem value={"Vegetarian"}>Vegetarian</MenuItem>
-          <MenuItem value={"Ketogenic"}>Ketogenic</MenuItem>
-          <MenuItem value={"Vegan"}>Vegan</MenuItem>
+          <MenuItem value="No diet">No diet</MenuItem>
+          <MenuItem value="Gluten Free">Gluten Free</MenuItem>
+          <MenuItem value="Vegetarian">Vegetarian</MenuItem>
+          <MenuItem value="Ketogenic">Ketogenic</MenuItem>
+          <MenuItem value="Vegan">Vegan</MenuItem>
         </Select>
       </FormControl>
 
@@ -79,8 +81,12 @@ export const SearchForm = ({ handleSubmit }) => {
           <FormControlLabel control={<Checkbox />} label="Sulfite" />
           <FormControlLabel control={<Checkbox />} label="Tree Nut" />
           <FormControlLabel control={<Checkbox />} label="Wheat" />
+          <FormControlLabel control={<Checkbox />} label="No allergies" />
         </Grid>
       </FormGroup>
+      <Button variant="contained" type="submit">
+        Explore
+      </Button>
     </Stack>
   );
 };
