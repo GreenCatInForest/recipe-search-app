@@ -15,9 +15,9 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button";
 
-export const SearchForm = ({ handleSubmit }) => {
+export const SearchForm = ({ setSearchQuery }) => {
   const onSubmit = ({ searchTerm }) => {
-    handleSubmit(searchTerm);
+    setSearchQuery(searchTerm);
   };
 
   const formik = useFormik({
@@ -50,16 +50,15 @@ export const SearchForm = ({ handleSubmit }) => {
           ),
         }}
       />
-      <FormControl fullWidth>
+      {/* <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Select diet</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           //value={age}
           label="Select diet"
-          //onChange={handleChange}
+          onChange={formik.handleChange}
         >
-          <MenuItem value="No diet">No diet</MenuItem>
           <MenuItem value="Gluten Free">Gluten Free</MenuItem>
           <MenuItem value="Vegetarian">Vegetarian</MenuItem>
           <MenuItem value="Ketogenic">Ketogenic</MenuItem>
@@ -81,9 +80,8 @@ export const SearchForm = ({ handleSubmit }) => {
           <FormControlLabel control={<Checkbox />} label="Sulfite" />
           <FormControlLabel control={<Checkbox />} label="Tree Nut" />
           <FormControlLabel control={<Checkbox />} label="Wheat" />
-          <FormControlLabel control={<Checkbox />} label="No allergies" />
         </Grid>
-      </FormGroup>
+      </FormGroup> */}
       <Button variant="contained" type="submit">
         Explore
       </Button>
