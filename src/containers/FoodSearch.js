@@ -10,19 +10,17 @@ export const FoodSearch = () => {
     if (searchQuery) {
       const fetchData = async () => {
         const { data } = await axios.get(
-          "https://api.spoonacular.com/recipes/complexSearch?apiKey=",
+          "https://api.spoonacular.com/recipes/complexSearch",
           {
             params: {
+              apiKey: process.env.REACT_APP_X_API_QUOTA_REQUEST,
               searchQuery,
-            },
-            headers: {
-              "X-API-Quota-Request": process.env.X_API_QUOTA_REQUEST,
             },
           }
         );
+        console.log(data);
       };
       fetchData();
-      console.log(fetchData());
     }
   }, [searchQuery]);
 
