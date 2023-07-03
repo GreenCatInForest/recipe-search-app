@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
+import Stack from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -58,20 +59,23 @@ export const RecipeCard = ({ recipe }) => {
         image={recipe.image}
         alt={recipe.title}
       />
-      <CardContent>
+      <CardContent sx={{ flexDirection: "row", justifyContent: "center" }}>
         <Typography variant="body2" color="text.secondary">
           Read the recipe:
-          <Link
-            variant="outlined"
-            aria-labelledby="heading-demo"
-            href={recipe.sourceUrl}
-            fontSize="md"
-            borderRadius="sm"
-          >
-            <MenuBookIcon />
-          </Link>
+          <IconButton aria-label="link go to recipe">
+            <Link
+              variant="outlined"
+              aria-labelledby="heading-demo"
+              href={recipe.sourceUrl}
+              fontSize="md"
+              borderRadius="sm"
+            >
+              <MenuBookIcon />
+            </Link>
+          </IconButton>
         </Typography>
       </CardContent>
+
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
