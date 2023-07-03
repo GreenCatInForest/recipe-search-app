@@ -1,8 +1,5 @@
-export const RecipeCard = () => {
-    return (
-      <div>
-        RecipeCard
-      </div>
-    );
-  };
-  
+export const RecipeCard = ({ recipe }) => {
+  console.log(recipe);
+
+  return <div>RecipeCard</div>;
+};
