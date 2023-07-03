@@ -18,6 +18,14 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { Link } from "@mui/material";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -46,12 +54,24 @@ export const RecipeCard = ({ recipe }) => {
   const percentOfDailyNeedCalories =
     recipe.nutrition.nutrients[0].percentOfDailyNeeds;
 
-  const diets = recipe.diets;
-
+  const diets = recipe.diets.toString();
   console.log(diets);
 
+  const createData = (name, value) => {
+    return { name, value };
+  };
+
+  const rows = [
+    createData("Total calories", totalCalories),
+    createData("Percent of your daily calories", percentOfDailyNeedCalories),
+    createData("Carbons", percentCarbs),
+    createData("Fat", percentFat),
+    createData("Protein", percentProtein),
+    createData("Type of diets", diets),
+  ];
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, textAlign: "center" }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -63,7 +83,7 @@ export const RecipeCard = ({ recipe }) => {
             <MoreVertIcon />
           </IconButton>
         }
-        title={recipe.title}
+        title={<Typography variant="h6">{recipe.title}</Typography>}
       />
       <CardMedia
         component="img"
@@ -87,7 +107,23 @@ export const RecipeCard = ({ recipe }) => {
           </IconButton>
         </Typography>
 
-        <Typography variant="body1" component="div">
+        <TableContainer component={Paper}>
+          <Table sx={{ maxWidth: 340 }} size="small" aria-label="a dense table">
+            <TableHead></TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow key={row.name}>
+                  <TableCell component="th" scope="row">
+                    {row.name}
+                  </TableCell>
+                  <TableCell align="right">{row.value}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+
+        {/* <Typography variant="body1" component="div">
           Calories: {totalCalories} kcal
         </Typography>
         <Typography variant="body1" component="div">
@@ -99,7 +135,7 @@ export const RecipeCard = ({ recipe }) => {
 
         <Typography variant="body1" component="div">
           Type of diets: {diets}
-        </Typography>
+        </Typography> */}
       </CardContent>
 
       <CardActions disableSpacing>
