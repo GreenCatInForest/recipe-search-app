@@ -38,6 +38,18 @@ export const RecipeCard = ({ recipe }) => {
     setExpanded(!expanded);
   };
 
+  const percentCarbs = recipe.nutrition.caloricBreakdown.percentCarbs;
+  const percentFat = recipe.nutrition.caloricBreakdown.percentFat;
+  const percentProtein = recipe.nutrition.caloricBreakdown.percentProtein;
+
+  const totalCalories = recipe.nutrition.nutrients[0].amount;
+  const percentOfDailyNeedCalories =
+    recipe.nutrition.nutrients[0].percentOfDailyNeeds;
+
+  const diets = recipe.diets;
+
+  console.log(diets);
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
@@ -74,6 +86,20 @@ export const RecipeCard = ({ recipe }) => {
             </Link>
           </IconButton>
         </Typography>
+
+        <Typography variant="body1" component="div">
+          Calories: {totalCalories} kcal
+        </Typography>
+        <Typography variant="body1" component="div">
+          Percent of your daily calories: {percentOfDailyNeedCalories} %
+        </Typography>
+        <Typography variant="body1">Carbons: {percentCarbs}%</Typography>
+        <Typography variant="body1">Fat: {percentFat}%</Typography>
+        <Typography variant="body1">Protein: {percentProtein}%</Typography>
+
+        <Typography variant="body1" component="div">
+          Type of diets: {diets}
+        </Typography>
       </CardContent>
 
       <CardActions disableSpacing>
@@ -94,7 +120,7 @@ export const RecipeCard = ({ recipe }) => {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
+          <Typography paragraph>Nutrition Value</Typography>
           <Typography paragraph>
             Heat 1/2 cup of the broth in a pot until simmering, add saffron and
             set aside for 10 minutes.
