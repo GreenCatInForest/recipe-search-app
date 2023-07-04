@@ -26,12 +26,13 @@ export const Explore = () => {
             {
               params: {
                 apiKey: process.env.REACT_APP_X_API_QUOTA_REQUEST,
-                searchQuery,
+                query: searchQuery,
                 addRecipeNutrition: true,
                 addRecipeInformation: true,
               },
             }
           );
+          console.log(data);
 
           setIsLoading(false);
           setRecipes(data.results);
