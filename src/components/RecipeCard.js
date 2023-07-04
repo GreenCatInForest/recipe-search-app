@@ -109,6 +109,7 @@ export const RecipeCard = ({ recipe }) => {
               href={recipe.sourceUrl}
               fontSize="md"
               borderRadius="sm"
+              target="_blank"
             >
               <MenuBookIcon />
             </Link>
