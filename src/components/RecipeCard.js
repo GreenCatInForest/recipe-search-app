@@ -28,17 +28,6 @@ import Paper from "@mui/material/Paper";
 
 import { getFromLocalStorage } from "../utils/getFromLocalStorage";
 
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
-  marginLeft: "auto",
-  transition: theme.transitions.create("transform", {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
-
 export const RecipeCard = ({ recipe }) => {
   console.log(recipe);
 
