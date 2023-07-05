@@ -42,12 +42,6 @@ const ExpandMore = styled((props) => {
 export const RecipeCard = ({ recipe }) => {
   console.log(recipe);
 
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
   const percentCarbs = recipe.nutrition.caloricBreakdown.percentCarbs;
   const percentFat = recipe.nutrition.caloricBreakdown.percentFat;
   const percentProtein = recipe.nutrition.caloricBreakdown.percentProtein;
