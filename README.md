@@ -14,6 +14,12 @@
 
 - Mariana Barbieru
 
+I am an electrical technician professional with a passion for technology and have recently started and intensive course in frontend development.
+Currently working in assembling the company’s products from schematic drawings. This involve producing
+electrical circuits and sub-circuits. I am carrying out final checks and also work with electrical, electronic
+components and sub-assemblies as required.I like working in a fast-paced environment and responding to tight
+deadlines to help achieve organisational goals.
+
 - Salman Ganatra
 
 ```
