@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -55,10 +56,26 @@ export const RecipeCard = ({ recipe }) => {
     createData("Type of diets", diets),
   ];
 
+  const itemsFromLS = getFromLocalStorage("recipes");
+
+  const [isRecipesInLs, setIsRecipesInLs] = useState(
+    itemsFromLS.find((itemFromLS) => {
+      return itemFromLS.id === recipe.id;
+    })
+  );
+
   const handleAddRecipeToMyPlans = () => {
-    const itemsFromLS = getFromLocalStorage("recipes");
     const newItems = [...itemsFromLS, recipe];
     localStorage.setItem("recipes", JSON.stringify(newItems));
+    setIsRecipesInLs(true);
+  };
+
+  const handleRemoveRecipeFromMyPlans = () => {
+    const newItems = itemsFromLS.filter((itemsFromLS) => {
+      return itemsFromLS.id !== recipe.id;
+    });
+    localStorage.setItem("recipes", JSON.stringify(newItems));
+    setIsRecipesInLs(false);
   };
 
   return (
@@ -114,29 +131,24 @@ export const RecipeCard = ({ recipe }) => {
             </TableBody>
           </Table>
         </TableContainer>
-
-        {/* <Typography variant="body1" component="div">
-          Calories: {totalCalories} kcal
-        </Typography>
-        <Typography variant="body1" component="div">
-          Percent of your daily calories: {percentOfDailyNeedCalories} %
-        </Typography>
-        <Typography variant="body1">Carbons: {percentCarbs}%</Typography>
-        <Typography variant="body1">Fat: {percentFat}%</Typography>
-        <Typography variant="body1">Protein: {percentProtein}%</Typography>
-
-        <Typography variant="body1" component="div">
-          Type of diets: {diets}
-        </Typography> */}
       </CardContent>
 
       <CardActions disableSpacing>
-        <IconButton
-          aria-label="add to favorites"
-          onClick={handleAddRecipeToMyPlans}
-        >
-          <FavoriteIcon />
-        </IconButton>
+        {!isRecipesInLs ? (
+          <IconButton
+            aria-label="add to favorites"
+            onClick={handleAddRecipeToMyPlans}
+          >
+            <FavoriteIcon />
+          </IconButton>
+        ) : (
+          <IconButton
+            aria-label="add to favorites"
+            onClick={handleRemoveRecipeFromMyPlans}
+          >
+            <FavoriteIcon />
+          </IconButton>
+        )}
 
         <IconButton aria-label="share">
           <ShareIcon />
