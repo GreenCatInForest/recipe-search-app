@@ -10,12 +10,11 @@
 
   Currently working in Industrial Temporary and Permanent Recruitment and approching my 10th year. I have always had an interest in all things IT and regularly get called the <mark>"IT department"</mark>. I basically just check for updates and turn things off and on again as Roy from the IT Crowd always suggests needs to be done. Started building my own PC's just before covid lockdown began which really got my computer and IT knowledge juices flowing which is how I ended up enrolling on this course now. All my knowledge is completely self-taught apart from the knowledge gained in this course.
 
-- Yana Kozarenko
+- Tetiana Kozarenko (Yana)
 
 - Mariana Barbieru
 
-I am an electrical technician professional with a passion for technology and have recently started and intensive course in frontend development.
-Currently working in assembling the company’s products from schematic drawings. This involve producing electrical circuits and sub-circuits. I am carrying out final checks and also work with electrical, electronic components and sub-assemblies as required.I like working in a fast-paced environment and responding to tight deadlines to help achieve organisational goals.
+I am an electrical technician professional with a passion for technology and have recently started and intensive course in frontend development. Currently working in assembling the company’s products from schematic drawings. This involve producing electrical circuits and sub-circuits. I am carrying out final checks and also work with electrical, electronic components and sub-assemblies as required.I like working in a fast-paced environment and responding to tight deadlines to help achieve organisational goals.
 
 - Salman Ganatra
 
