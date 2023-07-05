@@ -18,6 +18,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { Link } from "@mui/material";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
+import Delete from "@mui/icons-material/Delete";
 
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -29,9 +30,7 @@ import Paper from "@mui/material/Paper";
 
 import { getFromLocalStorage } from "../utils/getFromLocalStorage";
 
-export const RecipeCard = ({ recipe }) => {
-  console.log(recipe);
-
+export const RecipeCard = ({ recipe, setMyRecipes }) => {
   const percentCarbs = recipe.nutrition.caloricBreakdown.percentCarbs;
   const percentFat = recipe.nutrition.caloricBreakdown.percentFat;
   const percentProtein = recipe.nutrition.caloricBreakdown.percentProtein;
@@ -41,7 +40,6 @@ export const RecipeCard = ({ recipe }) => {
     recipe.nutrition.nutrients[0].percentOfDailyNeeds;
 
   const diets = recipe.diets.toString();
-  console.log(diets);
 
   const createData = (name, value) => {
     return { name, value };
@@ -56,26 +54,27 @@ export const RecipeCard = ({ recipe }) => {
     createData("Type of diets", diets),
   ];
 
-  const itemsFromLS = getFromLocalStorage("recipes");
-
   const [isRecipesInLs, setIsRecipesInLs] = useState(
-    itemsFromLS.find((itemFromLS) => {
+    getFromLocalStorage("recipes").find((itemFromLS) => {
       return itemFromLS.id === recipe.id;
     })
   );
 
   const handleAddRecipeToMyPlans = () => {
+    const itemsFromLS = getFromLocalStorage("recipes");
     const newItems = [...itemsFromLS, recipe];
     localStorage.setItem("recipes", JSON.stringify(newItems));
     setIsRecipesInLs(true);
   };
 
   const handleRemoveRecipeFromMyPlans = () => {
+    const itemsFromLS = getFromLocalStorage("recipes");
     const newItems = itemsFromLS.filter((itemsFromLS) => {
       return itemsFromLS.id !== recipe.id;
     });
     localStorage.setItem("recipes", JSON.stringify(newItems));
     setIsRecipesInLs(false);
+    setMyRecipes(newItems);
   };
 
   return (
@@ -146,7 +145,7 @@ export const RecipeCard = ({ recipe }) => {
             aria-label="add to favorites"
             onClick={handleRemoveRecipeFromMyPlans}
           >
-            <FavoriteIcon />
+            <Delete />
           </IconButton>
         )}
 

@@ -18,7 +18,13 @@ export const MyPlans = () => {
           </Typography>
         </Box>
       ) : (
-        myRecipes.map((myRecipe) => <RecipeCard recipe={myRecipe} />)
+        myRecipes.map((myRecipe) => (
+          <RecipeCard
+            setMyRecipes={setMyRecipes}
+            key={myRecipe.id}
+            recipe={myRecipe}
+          />
+        ))
       )}
     </Stack>
   );
