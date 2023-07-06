@@ -37,7 +37,7 @@ export const Features = () => {
         spacing={2}
         sx={{ p: 2 }}
       >
-        <Card sx={{ maxWidth: 345, justifyContent: "center" }}>
+        <Card sx={{ maxWidth: 345, justifyContent: "center", height: "351" }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -58,7 +58,7 @@ export const Features = () => {
           </CardActionArea>
         </Card>
 
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, height: "351" }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -79,14 +79,9 @@ export const Features = () => {
           </CardActionArea>
         </Card>
 
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, height: "351" }}>
           <CardActionArea>
-            <CardMedia
-              component="img"
-              height={280}
-              image={menu}
-              alt="a menu picture"
-            />
+            <CardMedia component="img" image={menu} alt="a menu picture" />
             <CardContent>
               <Typography
                 gutterBottom
