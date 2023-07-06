@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   createTheme,
   Stack,
@@ -22,6 +23,8 @@ export const AboutUs = () => {
       fontFamily: ["Pacifico"].join(","),
     },
   });
+
+  const navigate = useNavigate();
 
   return (
     <Stack>
@@ -79,8 +82,23 @@ export const AboutUs = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button
+              size="small"
+              onClick={() => {
+                navigate("/explore");
+              }}
+            >
+              Share
+            </Button>
+
+            <Button
+              size="small"
+              onClick={() => {
+                navigate("/explore");
+              }}
+            >
+              Learn More
+            </Button>
           </CardActions>
         </Card>
         <Card
@@ -111,8 +129,22 @@ export const AboutUs = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button
+              size="small"
+              onClick={() => {
+                navigate("/explore");
+              }}
+            >
+              Share
+            </Button>
+            <Button
+              size="small"
+              onClick={() => {
+                navigate("/explore");
+              }}
+            >
+              Learn More
+            </Button>
           </CardActions>
         </Card>
         <Card
@@ -149,8 +181,22 @@ export const AboutUs = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button
+              size="small"
+              onClick={() => {
+                navigate("/explore");
+              }}
+            >
+              Share
+            </Button>
+            <Button
+              size="small"
+              onClick={() => {
+                navigate("/explore");
+              }}
+            >
+              Learn More
+            </Button>
           </CardActions>
         </Card>
         <Card
@@ -183,8 +229,22 @@ export const AboutUs = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button
+              size="small"
+              onClick={() => {
+                navigate("/explore");
+              }}
+            >
+              Share
+            </Button>
+            <Button
+              size="small"
+              onClick={() => {
+                navigate("/explore");
+              }}
+            >
+              Learn More
+            </Button>
           </CardActions>
         </Card>
       </Stack>
