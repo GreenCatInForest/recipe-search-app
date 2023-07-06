@@ -20,35 +20,33 @@ export const Banner = () => {
   });
 
   return (
-    <Paper elevation={3}>
+    <Paper elevation={5}>
       <Stack
         flexDirection={{ xs: "column", sm: "column", md: "row" }}
         alignItems="center"
-        justifyContent="space-between"
-        spacing={2}
-        sx={{ p: 2 }}
+        justifyContent="space-evenly"
+        sx={{ p: 3 }}
+        spacing={3}
       >
-        <Stack
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            alignContent: "flex-start",
-          }}
-        >
-          <Image src={foodHomePicture} />
-        </Stack>
+        <Image
+          src={foodHomePicture}
+          width={{ xs: "60%", sm: "60%", md: "30%" }}
+        />
+
         <Stack
           alignContent="center"
           alignItems="center"
           justifyContent="center"
+          textAlign="center"
           spacing={2}
         >
-          <Typography component="h1" variant="h5">
-            Happy & Healthy Recipes
-          </Typography>
           <ThemeProvider theme={theme}>
-            <Typography component="h2">Love your food every day!</Typography>
+            <Typography sx={{ fontSize: "3.5rem" }}>
+              Happy & Healthy Recipes
+            </Typography>
+          </ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <Typography component="h1">Love your food every day!</Typography>
           </ThemeProvider>
           <Typography component="h2">
             Make your own collection of recipes with calories and nutrition
