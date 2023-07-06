@@ -18,6 +18,8 @@ I am an electrical technician professional with a passion for technology and hav
 
 - Salman Ganatra
 
+I am a qualified teacher of Maths with an interst in coding. I have started by journey to become a front end web developer by joining a 12 week intensive bootcamp. I have learnt fundamentals of web development such as html and css. I trying to fine tune my javascript knowledge while practising some projects.
+
 ```
 Getting Started
 git clone git@github.com:nobdey92/recipe-search-app.git
@@ -58,4 +60,4 @@ Mobile
 
 - Mariana Barbieru
 
-- Salman Ganatra
+- Salman Ganatra - [GitHub](https://github.com/salubaba10) - [LinkedIn](https://www.linkedin.com/in/salman-ganatra-889614224/)
