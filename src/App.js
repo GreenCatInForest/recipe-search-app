@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 
 import { AppRoutes } from "./AppRoutes";
 import { NavBar } from "./components/NavBar";
-import { Footer } from "./components/Footer";
 
 export const App = () => {
   return (
@@ -17,7 +16,6 @@ export const App = () => {
             <AppRoutes />
           </Container>
         </Box>
-        <Footer />
       </Stack>
     </BrowserRouter>
   );

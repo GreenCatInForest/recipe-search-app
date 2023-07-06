@@ -11,6 +11,7 @@ export const Home = () => {
       <Banner />
       <Features />
       <AboutUs />
+      <Footer />
     </Stack>
   );
 };
