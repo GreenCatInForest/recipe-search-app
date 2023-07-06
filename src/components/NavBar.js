@@ -13,6 +13,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import Badge from "@mui/material/Badge";
+import Typography from "@mui/material/Typography";
 import FoodBankIcon from "@mui/icons-material/FoodBank";
 
 export const NavBar = () => {
@@ -29,11 +30,11 @@ export const NavBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: "#ff0000" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Drawer anchor="top" open={isOpen} onClose={handleCloseDrawer}>
-            <List>
+            <List color="black">
               <ListItem disablePadding>
                 <ListItemButton
                   onClick={() => {
@@ -52,6 +53,16 @@ export const NavBar = () => {
                   }}
                 >
                   <ListItemText primary="Explore" />
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton
+                  onClick={() => {
+                    handleCloseDrawer();
+                    navigate("/my-plans");
+                  }}
+                >
+                  <ListItemText primary="My Recipes Plan" />
                 </ListItemButton>
               </ListItem>
             </List>
@@ -75,7 +86,7 @@ export const NavBar = () => {
               }}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              <Badge badgeContent={4} color="error">
+              <Badge badgeContent={0} color="error">
                 <FoodBankIcon />
               </Badge>
             </IconButton>
@@ -115,9 +126,10 @@ export const NavBar = () => {
                 onClick={() => {
                   navigate("/my-plans");
                 }}
-                sx={{ my: 2, mx: 2, color: "white", display: "block" }}
+                sx={{ my: 2, mx: 2, color: "white", display: "flex" }}
               >
-                <FoodBankIcon />
+                <Typography>My Plans </Typography>
+                <FoodBankIcon sx={{ mx: 1 }} />
               </IconButton>
             </Box>
           </Box>
