@@ -15,7 +15,7 @@ export const RecipesContainer = ({ recipes }) => {
 
       <Stack direction="row" flexWrap="wrap" justifyContent="space-evenly">
         {recipes.map((recipe) => {
-          return <RecipeCard recipe={recipe} />;
+          return <RecipeCard key={recipe.id} recipe={recipe} />;
         })}
       </Stack>
     </Stack>
