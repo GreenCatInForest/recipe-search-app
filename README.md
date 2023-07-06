@@ -10,7 +10,7 @@
 
   Currently working in Industrial Temporary and Permanent Recruitment and approching my 10th year. I have always had an interest in all things IT and regularly get called the <mark>"IT department"</mark>. I basically just check for updates and turn things off and on again as Roy from the IT Crowd always suggests needs to be done. Started building my own PC's just before covid lockdown began which really got my computer and IT knowledge juices flowing which is how I ended up enrolling on this course now. All my knowledge is completely self-taught apart from the knowledge gained in this course.
 
-- Tetiana Kozarenko (Yana)
+- Yana Kozarenko
 
 - Mariana Barbieru
 

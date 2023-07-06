@@ -75,7 +75,7 @@ export const NavBar = () => {
               }}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              <Badge badgeContent={0} color="error">
+              <Badge badgeContent={4} color="error">
                 <FoodBankIcon />
               </Badge>
             </IconButton>
