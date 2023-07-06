@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { createTheme, ThemeProvider } from "@mui/material";
+
 import aDish from "../img/aDish.png";
 import severalDishes from "../img/severalDishes.png";
 import menu from "../img/menu.png";
@@ -17,13 +18,14 @@ export const Features = () => {
     },
   });
   return (
-    <Stack>
+    <Stack spacing={3}>
       <ThemeProvider theme={theme}>
         <Typography
           gutterBottom
           variant="h3"
           component="div"
           textAlign="center"
+          marginTop="20px"
         >
           Features
         </Typography>

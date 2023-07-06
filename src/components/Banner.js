@@ -45,7 +45,7 @@ export const Banner = () => {
           spacing={2}
         >
           <Typography component="h1" variant="h5">
-            Happy Recipes
+            Happy & Healthy Recipes
           </Typography>
           <ThemeProvider theme={theme}>
             <Typography component="h2">Love your food every day!</Typography>

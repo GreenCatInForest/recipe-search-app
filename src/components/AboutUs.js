@@ -1,10 +1,25 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { createTheme, Stack, Typography, ThemeProvider } from "@mui/material";
 
 export const AboutUs = () => {
-  return <div>About Us</div>;
+  const theme = createTheme({
+    typography: {
+      fontFamily: ["Pacifico"].join(","),
+    },
+  });
+
+  return (
+    <Stack>
+      <ThemeProvider theme={theme}>
+        <Typography
+          variant="h3"
+          component="div"
+          textAlign="center"
+          marginTop="20px"
+        >
+          About Us
+        </Typography>
+      </ThemeProvider>
+    </Stack>
+  );
 };
