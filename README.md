@@ -37,11 +37,11 @@ npm run start
 
 Desktop
 
-![Desktop View of App](desktopApp.jpg)
+![Desktop View of App](./src/img/desktopApp.jpg)
 
 Mobile
 
-![Mobile View of App](mobileApp.jpg)
+![Mobile View of App](./src/img/obileApp.jpg)
 
 # Technologies and Frameworks
 
