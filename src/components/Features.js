@@ -95,7 +95,7 @@ export const Features = () => {
                 component="div"
                 textAlign="center"
               >
-                Keep on track calories & nutrition
+                Track calories & nutrition.
               </Typography>
             </CardContent>
           </CardActionArea>

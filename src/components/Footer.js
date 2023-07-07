@@ -17,7 +17,7 @@ export const Footer = () => {
     >
       <Container maxWidth="sm">
         <Typography variant="body2" color="text.secondary" align="center">
-          Copyright © Happy Recipes {new Date().getFullYear()}.
+          Copyright © Happy & Healthy Recipes {new Date().getFullYear()}.
         </Typography>
       </Container>
     </Box>
