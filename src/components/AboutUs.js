@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useNavigate } from "react-router-dom";
 import {
   createTheme,
   Stack,
@@ -11,6 +10,8 @@ import {
   CardMedia,
   Button,
 } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import jordanHobdey from "../img/jordanHobdey.png";
 import yanaKozarenko from "../img/yanaKozarenko.jpg";
@@ -23,8 +24,6 @@ export const AboutUs = () => {
       fontFamily: ["Pacifico"].join(","),
     },
   });
-
-  const navigate = useNavigate();
 
   return (
     <Stack>
@@ -52,6 +51,7 @@ export const AboutUs = () => {
             textAlign: "center",
             alignContent: "center",
             marginTop: "24px",
+            flexDirection: "column",
           }}
         >
           <CardMedia
@@ -64,7 +64,7 @@ export const AboutUs = () => {
             image={jordanHobdey}
             title="jordan Hobdey"
           />
-          <CardContent>
+          <CardContent sx={{ flexGrow: 1 }}>
             <Typography gutterBottom variant="h5" component="div">
               Jordan Hobdey
             </Typography>
@@ -81,23 +81,28 @@ export const AboutUs = () => {
               gained in this course.
             </Typography>
           </CardContent>
-          <CardActions>
+
+          <CardActions
+            sx={{
+              marginTop: "auto",
+              justifyContent: "center",
+              justifyItems: "flex-end",
+            }}
+          >
             <Button
-              size="small"
-              onClick={() => {
-                navigate("/explore");
-              }}
+              target="_blank"
+              href="https://github.com/nobdey92"
+              rel="noreferrer"
             >
-              Share
+              <GitHubIcon sx={{ color: "black", fontSize: "2.2rem" }} />
             </Button>
 
             <Button
-              size="small"
-              onClick={() => {
-                navigate("/explore");
-              }}
+              target="_blank"
+              href="https://github.com/nobdey92"
+              rel="noreferrer"
             >
-              Learn More
+              <LinkedInIcon sx={{ fontSize: "2.5rem" }} />
             </Button>
           </CardActions>
         </Card>
@@ -123,27 +128,26 @@ export const AboutUs = () => {
               Yana Kozarenko
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Frontend Developer, student Purple Beard EdTex Frontend
-              Development Bootcamp. Skills: JavaScript, HTML5, CSS, React,
-              Bootstrap, MUI. Passionate about Maths, Physics, AI.
+              Frontend Developer, student Purple Beard Frontend Development
+              Bootcamp. Skills: JavaScript, HTML5, CSS, React, Bootstrap, MUI.
+              Passionate about Maths, AI.
             </Typography>
           </CardContent>
-          <CardActions>
+          <CardActions sx={{ justifyContent: "center" }}>
             <Button
-              size="small"
-              onClick={() => {
-                navigate("/explore");
-              }}
+              target="_blank"
+              href="https://github.com/GreenCatInForest"
+              rel="noreferrer"
             >
-              Share
+              <GitHubIcon sx={{ color: "black", fontSize: "2.2rem" }} />
             </Button>
+
             <Button
-              size="small"
-              onClick={() => {
-                navigate("/explore");
-              }}
+              target="_blank"
+              href="https://www.linkedin.com/in/yana-kozarenko-237ba5191/"
+              rel="noreferrer"
             >
-              Learn More
+              <LinkedInIcon sx={{ fontSize: "2.5rem" }} />
             </Button>
           </CardActions>
         </Card>
@@ -180,22 +184,21 @@ export const AboutUs = () => {
               organisational goals.
             </Typography>
           </CardContent>
-          <CardActions>
+          <CardActions sx={{ justifyContent: "center" }}>
             <Button
-              size="small"
-              onClick={() => {
-                navigate("/explore");
-              }}
+              target="_blank"
+              href="https://github.com/MarianaBarbieru34"
+              rel="noreferrer"
             >
-              Share
+              <GitHubIcon sx={{ color: "black", fontSize: "2.2rem" }} />
             </Button>
+
             <Button
-              size="small"
-              onClick={() => {
-                navigate("/explore");
-              }}
+              target="_blank"
+              href="https://www.linkedin.com/in/mariana-barbieru-687647272/"
+              rel="noreferrer"
             >
-              Learn More
+              <LinkedInIcon sx={{ fontSize: "2.5rem" }} />
             </Button>
           </CardActions>
         </Card>
@@ -228,22 +231,21 @@ export const AboutUs = () => {
               javascript knowledge while practising some projects.
             </Typography>
           </CardContent>
-          <CardActions>
+          <CardActions sx={{ justifyContent: "center" }}>
             <Button
-              size="small"
-              onClick={() => {
-                navigate("/explore");
-              }}
+              target="_blank"
+              href="https://github.com/salubaba10"
+              rel="noreferrer"
             >
-              Share
+              <GitHubIcon sx={{ color: "black", fontSize: "2.2rem" }} />
             </Button>
+
             <Button
-              size="small"
-              onClick={() => {
-                navigate("/explore");
-              }}
+              target="_blank"
+              href="https://github.com/salubaba10"
+              rel="noreferrer"
             >
-              Learn More
+              <LinkedInIcon sx={{ fontSize: "2.5rem" }} />
             </Button>
           </CardActions>
         </Card>

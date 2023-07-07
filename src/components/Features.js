@@ -37,7 +37,13 @@ export const Features = () => {
         spacing={2}
         sx={{ p: 2 }}
       >
-        <Card sx={{ maxWidth: 345, justifyContent: "center", height: "351" }}>
+        <Card
+          sx={{
+            maxWidth: 345,
+            justifyContent: "center",
+            height: "351",
+          }}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
