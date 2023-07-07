@@ -28,10 +28,7 @@ export const Banner = () => {
         sx={{ p: 3 }}
         spacing={3}
       >
-        <Image
-          src={foodHomePicture}
-          width={{ xs: "60%", sm: "60%", md: "30%" }}
-        />
+        <Image src={foodHomePicture} width={200} />
 
         <Stack
           alignContent="center"
