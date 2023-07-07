@@ -41,7 +41,7 @@ Desktop
 
 Mobile
 
-![Mobile View of App](./src/img/obileApp.jpg)
+![Mobile View of App](./src/img/mobileApp.jpg)
 
 # Technologies and Frameworks
 
