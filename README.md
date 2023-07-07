@@ -1,6 +1,6 @@
 # Recipe Search App
 
-**A very brief description of your project.**
+**Our app is for people to serach for an ingredient and recieve recipies they can save and come back to later.**
 
 ---
 
@@ -8,9 +8,11 @@
 
 - Jordan Hobdey
 
-  Currently working in Industrial Temporary and Permanent Recruitment and approching my 10th year. I have always had an interest in all things IT and regularly get called the <mark>"IT department"</mark>. I basically just check for updates and turn things off and on again as Roy from the IT Crowd always suggests needs to be done. Started building my own PC's just before covid lockdown began which really got my computer and IT knowledge juices flowing which is how I ended up enrolling on this course now. All my knowledge is completely self-taught apart from the knowledge gained in this course.
+Currently working in Industrial Temporary and Permanent Recruitment and approching my 10th year. I have always had an interest in all things IT and regularly get called the <mark>"IT department"</mark>. I basically just check for updates and turn things off and on again as Roy from the IT Crowd always suggests needs to be done. Started building my own PC's just before covid lockdown began which really got my computer and IT knowledge juices flowing which is how I ended up enrolling on this course now. All my knowledge is completely self-taught apart from the knowledge gained in this course.
 
 - Yana Kozarenko
+
+Frontend Developer, student Purple Beard Frontend Development Bootcamp. Skills: JavaScript, HTML5, CSS, React, Bootstrap, MUI. Passionate about Maths, AI.
 
 - Mariana Barbieru
 
@@ -56,8 +58,8 @@ Mobile
 
 - Jordan Hobdey - [GitHub](https://github.com/nobdey92) - [LinkedIn](https://www.linkedin.com/in/jordan-hobdey/)
 
-- Tetiana Kozarenko (Yana)
+- Yana Kozarenko - [GitHub](https://github.com/GreenCatInForest)
 
-- Mariana Barbieru
+- Mariana Barbieru - [GitHub](https://github.com/MarianaBarbieru34)
 
 - Salman Ganatra - [GitHub](https://github.com/salubaba10) - [LinkedIn](https://www.linkedin.com/in/salman-ganatra-889614224/)
