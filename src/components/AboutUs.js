@@ -48,7 +48,7 @@ export const AboutUs = () => {
       >
         <Card
           sx={{
-            maxWidth: "22%",
+            flex: "1 1 22%",
             textAlign: "center",
             alignContent: "center",
             marginTop: "24px",
@@ -103,7 +103,7 @@ export const AboutUs = () => {
         </Card>
         <Card
           sx={{
-            maxWidth: "22%",
+            flex: "1 1 22%",
             textAlign: "center",
             alignContent: "center",
           }}
@@ -149,7 +149,7 @@ export const AboutUs = () => {
         </Card>
         <Card
           sx={{
-            maxWidth: "22%",
+            flex: "1 1 22%",
             textAlign: "center",
             alignContent: "center",
           }}
@@ -201,7 +201,7 @@ export const AboutUs = () => {
         </Card>
         <Card
           sx={{
-            maxWidth: "22%",
+            flex: "1 1 22%",
             textAlign: "center",
             alignContent: "center",
           }}
