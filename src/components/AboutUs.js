@@ -224,11 +224,8 @@ export const AboutUs = () => {
               Salman Ganatra
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              I am a qualified teacher of Maths with an interst in coding. I
-              have started by journey to become a front end web developer by
-              joining a 12 week intensive bootcamp. I have learnt fundamentals
-              of web development such as html and css. I trying to fine tune my
-              javascript knowledge while practising some projects.
+              I am a Maths teacher with an interest in coding. I have recently
+              started a journey into front end web development.
             </Typography>
           </CardContent>
           <CardActions sx={{ justifyContent: "center" }}>
